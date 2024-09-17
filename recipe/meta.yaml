@@ -1,5 +1,5 @@
 {% set name = "xaitk-saliency" %}
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xaitk_saliency-{{ version }}.tar.gz
-  sha256: 2b30ceb0930d2ac0777d84b13e72a38e3acef9231a597ec7e4750b928495b8df
+  sha256: 7cfb6affeb8bd3fde3fc10f3c635f65bd9f913729efdcc9398a8ce1ccd29d09a
 
 build:
   skip: true  # [py>=400 or py2k]
   entry_points:
     - sal-on-coco-dets = xaitk_saliency.utils.bin.sal_on_coco_dets:sal_on_coco_dets
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -29,8 +29,8 @@ requirements:
     - scikit-image >=0.18.1  # [py>=38 and py<311]
     - scikit-image >=0.20  # [py>=311 and py<312]
     - scikit-image >=0.22  # [py>=312]
-    - scikit-learn <1.4,>=1.2  # [py>=38 and py<312]
-    - scikit-learn >=1.4  # [py>=312]
+    - scikit-learn >=1.2  # [py<39]
+    - scikit-learn >=1.5  # [py>=39]
     - smqtk-classifier >=0.17.0
     - smqtk-core >=0.18.0
     - smqtk-descriptors >=0.16.0
