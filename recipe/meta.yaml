@@ -38,7 +38,7 @@ requirements:
     - papermill >=2.3.3
     - pytorch >=1.9.0
     - torchvision >=0.10.0
-    - tqdm ==4.66.3
+    - tqdm >=4.66.3
     - kwcoco >=0.2.18
     - pyyaml >=6.0.1
     - shapely >=2.0.2
