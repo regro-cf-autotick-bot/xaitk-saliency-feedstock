@@ -14,7 +14,7 @@ build:
   entry_points:
     - sal-on-coco-dets = xaitk_saliency.utils.bin.sal_on_coco_dets:sal_on_coco_dets
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
