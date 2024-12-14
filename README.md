@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xaitk-saliency-
 
 Home: https://github.com/XAITK/xaitk-saliency
 
-Package license: BSD-3-Clause
+Package license: Apache-2.0
 
 Summary: Visual saliency map generation interfaces and baseline implementations for explainable AI.
 
