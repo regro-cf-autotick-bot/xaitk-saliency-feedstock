@@ -55,7 +55,7 @@ about:
   home: https://github.com/XAITK/xaitk-saliency
   summary: Visual saliency map generation interfaces and baseline implementations for explainable AI.
   license: Apache-2.0
-  license_file: '{{ environ["PREFIX"] }}/LICENSE.txt'
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
